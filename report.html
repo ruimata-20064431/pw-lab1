@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>A minha primeira página</title>
+    <style>  <!-- only use of CSS since blink tag is deprecated -->
+      .blink-one {
+      }
+      .blink-two {
+        animation: blinker-two 1.4s linear infinite;
+          color: darkred;
+          font-weight: bolder;
+      }
+      @keyframes blinker-two {
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+</head>
+<body>
+    <h1>A Internet e a Web</h1>
+    <p><a href="index.html">Programação Web</a>  <a href="report.html">A Internet e a Web</a></p>
+    <br>
+    <div style="background-color: aliceblue; padding: 1px; text-align: center">
+        <p> DISCLAIMER: based on the academic spirit, this report doesn't aim for looks, but focused on attempting,<br>
+            as much as possible, to check and test different HTML tags (and their behaviours).</p>
+        <p> It is clear that styles should be applied via CSS but, at this stage, the student profited to check<br>
+            their usage directly on HTML tags. </p>
+        <p> Pretty sure opportunities will arrive...</p>
+    </div>
+    <div>
+        <div>
+            <h2>OBSERVAÇÕES - Informação complementar à ficha - Lab1</h2>
+            <p>Relatório com informação complementar solicitado na ficha prática: <a href="https://github.com/ULHT-PW/pw-lab1">Lab1</a></p>
+            <div style="background-color:LightGray; padding: 1px;">
+                <h3 style="margin-left: 10px; margin-right: 40px; font-size: 25px; text-align: center">IPs and Location</h3>
+                <div style="margin-left:40px; margin-right: 40px; background-color:PaleGreen;color:DarkSlateGrey;padding: 1px">
+                    <ul>
+                        <li>
+                            <div>
+                                <p style="margin-top: 40px">PC Desktop - Fiber connection via MEO</p>
+                                <p style="margin-left: 40px"><b>IPv6:   2001:8a0:708b:7b01:50bd:309:67dc:a6a1</b></p>
+                                <p style="margin-left: 40px"><b>IPv4:   85.247.128.137</b></p>
+                                <div style="margin-left: 40px;">
+                                    <p>Location:</p>
+                                    <img src="images/lab1-PC-location.PNG" height="512" width="632"/>
+                                    <p>
+                                        <img src="https://www.freeiconspng.com/thumbs/check-tick-icon/check-tick-icon-22.png"height="20" width="25"/>
+                                        <!--<img src="https://freepikpsd.com/file/2019/10/check-mark-symbol-transparent-background-9-Transparent-Images.png"height="20" width="25"/>
+                                        -->
+                                        <b>Location seems relatively accurate</b> (deviation by ~8km)
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div style="margin-left: 40px; margin-right: 40px; background-color:Khaki; color:DarkSlateGrey; padding: 1px">
+                    <ul>
+                        <li>
+                            <div>
+                                <p style="margin-top: 40px">Mobile - MEO GSM network</p>
+                                <p style="margin-left: 40px"><b></b></p>
+                                <p style="margin-left: 40px"><b>IPv4:   82.223.227.20</b></p>
+                                <div style="margin-left: 40px;">
+                                    <p>Location:</p>
+                                    <img src="images/lab1-MobileMEO-location.PNG" height="484" width="630"/>
+                                    <p>
+                                        <img src="https://icon-library.com/images/cross-mark-icon/cross-mark-icon-5.jpg"height="20" width="25"/>
+                                        <!-- image of jpg extension but seems to be a png..." -->
+                                        <b>Location is WAY OFF</b>
+                                        <span style="color: darkred;font-size:20px"><b>(deviation by ~600Km) </b></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div style="margin-left: 40px; margin-right: 40px; background-color:LightBlue; color:DarkSlateGrey; padding: 1px">
+                    <ul>
+                        <li>
+                            <div>
+                                <p style="margin-top: 40px">Lab1 URL: <a href="https://ruimata-20064431-pw-lab1.herokuapp.com/">
+                                    https://ruimata-20064431-pw-lab1.herokuapp.com/
+                                </a></p>
+                                <p style="margin-left: 40px"><b></b></p>
+                                <p style="margin-left: 40px"><b>IPv4:   54.228.42.199</b></p>
+                                <p style="margin-left: 40px;">
+                                    <p>Location:</p>
+
+                                    <img src="images/lab1-Lab1-location.PNG" height="512" width="630"/>
+                                    <p>
+                                        <img src="https://icon-library.com/images/cross-mark-icon/cross-mark-icon-5.jpg"height="20" width="25"/>
+                                        <!-- image of jpg extension but seems to be a png..." -->
+                                        <span style="font-size: 35px; color:orangered"><b>?</b> </span>
+                                        <b>Location is uncertain, but may be correct: Europe (confirmation not accessible)</b>
+                                    </p>
+                                    <hr style="margin-right: 40px"></hr>
+                                    <p>Trace Route</p>
+                                    <div style="background-color: black; color: dodgerblue; margin-left: 40px; margin-right: 40px">
+                                        <span style="font-family: monospace; font-size: small; line-height: 15%;">
+                                            <div style="margin-left: 10px; padding: 1px">
+                                                <p>C:\Users\RMATA>tracert 54.228.42.199</p>
+                                                <p></p>
+                                                <p>Tracing route to ec2-54-228-42-199.eu-west-1.compute.amazonaws.com [54.228.42.199]</p>
+                                                <p>over a maximum of 30 hops:</p>
+                                                <p></p>
+                                                <p>  1     2 ms     1 ms     1 ms  dsldevice.lan [192.168.1.254]</p>
+                                                <p>  2     *        *        *     Request timed out.</p>
+                                                <p>  3     *        8 ms     6 ms  telepac14-hsi.cprm.net [195.8.30.242]</p>
+                                                <p>  4     6 ms     5 ms     6 ms  lis2-cr1-bu10-200.cprm.net [195.8.30.241]</p>
+                                                <p>  5     7 ms     7 ms     6 ms  99.83.71.54</p>
+                                                <p>  6     *        *        *     Request timed out.</p>
+                                                <p>  7     *        *        *     Request timed out.</p>
+                                                <p>  8     *        *        *     Request timed out.</p>
+                                                <p>  9     *        *        *     Request timed out.</p>
+                                                <p> 10     *        *        *     Request timed out.</p>
+                                                <p> 11     *        *        *     Request timed out.</p>
+                                                <p> 12     *        *        *     Request timed out.</p>
+                                                <p> 13     *        *        *     Request timed out.</p>
+                                                <p> 14     *        *        *     Request timed out.</p>
+                                                <p> 15     *        *        *     Request timed out.</p>
+                                                <p> 16     *        *        *     Request timed out.</p>
+                                                <p> 17     *        *        *     Request timed out.</p>
+                                                <p> 18     *        *        *     Request timed out.</p>
+                                                <p> 19     *        *        *     Request timed out.</p>
+                                                <p> 20     *        *        *     Request timed out.</p>
+                                                <p> 21     *        *        *     Request timed out.</p>
+                                                <p> 22     *        *        *     Request timed out.</p>
+                                                <p> 23     *        *        *     Request timed out.</p>
+                                                <p> 24     *        *        *     Request timed out.</p>
+                                                <p> 25     *        *        *     Request timed out.</p>
+                                                <p> 26     *        *        *     Request timed out.</p>
+                                                <p> 27     *        *        *     Request timed out.</p>
+                                                <p> 28     *        *        *     Request timed out.</p>
+                                                <p> 29     *        *        *     Request timed out.</p>
+                                                <p> 30     *        *        *     Request timed out.</p>
+                                                <p></p>
+                                                <p>Trace complete.</p>
+                                                <p></p>
+                                                <p>C:\Users\RMATA></p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <p style="margin-left: 40px">
+                                        looks like multiple routing hops exist but trace information timed out
+                                        <br>
+                                        >> only 4 of initial 5 hops provided relevant information
+                                    </p>
+                                </p>
+                            </div>
+                            <br>
+                            <div>
+                                <hr style="margin-right: 40px"></hr>
+                                <p>Visual trace - via <a href="https://geotraceroute.com/">https://geotraceroute.com/</a></p>
+                                <div style="margin-left: 40px">
+                                    <img src="images/lab1-Lab1-geotrace-url.PNG" height="902" width="831"/>
+                                    <div>
+                                        <p style="color: darkred;">
+                                            <p class="blink-two">
+                                            Location in GeoTraceroute DIFFER from IP tracing (from IRELAND to Germany)
+                                            </p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div style="margin-left: 40px">
+                                    <img src="images/lab1-Lab1-geotrace-IP.PNG" height="902" width="831"/>
+                                    <div>
+                                        <p style="color: darkred;">
+                                            <p class="blink-two">
+                                            Location in GeoTraceroute ALSO DIFFER from IP tracing when using app IP, instead of URL
+                                            </p>
+                                        </p>
+                                        <p>Different trace results may be a result of the app being too recent...?<br>
+                                           => probably only due to decoding processes using different IP tables (and, at least one, not up to date)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div style="background-color:LightGray; padding: 1px;">
+                <h3 style="margin-left: 10px; margin-right: 40px; font-size: 25px; text-align: center">HTML Inspect</h3>
+                <div style="margin-left:40px; margin-right: 40px; background-color:PaleGreen;color:DarkSlateGrey;padding: 1px">
+                    <ul>
+                        <li>
+                            <div>
+                                <p style="margin-top: 40px">Microsoft Edge load - Network view</p>
+                                <div style="margin-left: 40px;">
+                                    <p>Lab1 - App load:</p>
+                                    <img src="images/lab1-Inspect-network001.PNG" height="510" width="926"/>
+                                    <p>2 files downloaded</p>
+                                    <table>
+                                        <tr>
+                                            <td><ul><li>HTML source as a "document" file type</li></ul></td>
+                                            <td><ul>[espera: </ul></td> <!-- weird way to make an indent... ;) -->
+                                            <td>        </td>
+                                            <td>99.71ms</td>
+                                            <td>|| download: </td>
+                                            <td>0.58ms</td>
+                                            <td>]</td>
+                                        </tr>
+                                        <tr>
+                                            <td><ul><li>Image downloaded as "PNG" file type</li></ul></td>
+                                            <td><ul>[espera: </ul></td> <!-- weird way to make an indent... ;) -->
+                                            <td>        </td>
+                                            <td>n/a</td>
+                                            <td>|| download: </td>
+                                            <td>0.014ms</td>
+                                            <td>]</td>
+                                        </tr>
+                                    </table>
+                                    <p>For some reason, the image had no waiting time (or so seemed)<br>
+                                       => could be due to waiting time being smaller than for the HTML to be ready...?
+                                        <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1621486541018x357971419165324500%2FLawyers_for_Hire_sem%2520fundo.png?w=256&h=253&auto=compress&fit=crop&dpr=2.5" height="40px">
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
